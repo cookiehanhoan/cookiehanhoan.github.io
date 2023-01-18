@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on CookieHanHoan Security Blog</title><link>https://cookiehanhoan.github.io/post/</link><description>Recent content in Posts on CookieHanHoan Security Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://cookiehanhoan.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>DailyCookies</title><link>https://cookiehanhoan.github.io/post/dailycookies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cookiehanhoan.github.io/post/dailycookies/</guid><description>Daily cookies pdf printing solution
+Pricing - Browserless
+Puppeteer vs Selenium vs Playwright, a speed comparison
+https://github.com/mileszs/wicked_pdf
+https://github.com/transitive-bullshit/awesome-puppeteer
+How to convert HTML-to-PDF with Other Documentation - DocRaptor HTML to PDF Converter
+02-01-2023 External DNS across K8S clusters when installing External DNS (X-DNS) across clusters to manage same DNS zone(s)
+pay attention to your owner setting external-dns/types.go at d4523be44ce53069fa8371527a4f297fd1af94a1 · kubernetes-sigs/external-dns
+otherwise, all of your DNS (managed by X-DNS) in other cluster will be gone 🙂 reason: X-DNS using TXT to manage DNS records</description></item></channel></rss>
