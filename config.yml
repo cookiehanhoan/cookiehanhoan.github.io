@@ -1,141 +1,67 @@
 baseURL: https://cookiehanhoan.github.io/
 languageCode: en-us
 title: CookieHanHoan Security Blog
-theme: "PaperMod"
+theme: "risotto"
 
 paginate: 5
 
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-# googleAnalytics: UA-123-45
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
+DefaultContentLanguage: en
+enableInlineShortcodes: true
+ignoreErrors:
+  - error-remote-getjson
+sectionPagesMenu: main
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "Blog học bảo mật cùng chú gà vui vẻ <3"
-  keywords: [Blog, CookieHanHoan, CookieArena]
-  author: harry@cookiehanhoan.org
-  #images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: light
-  disableThemeToggle: false
-
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-# TODO:
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Xin chào \U0001F44B"
-    Content: Học bảo mật cùng gà vui vẻ nhé
-
-  socialIcons:
-    # TODO:
-    #- name: twitter
-    #  url: "https://twitter.com/"
-    - name: facebook
-      url: "https://www.facebook.com/cookie.han.hoan/"
-    - name: github
-      url: "https://github.com/cookiehanhoan"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
-
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+  noindex: false
+  theme:
+    palette: base16-dark
+  about:
+    title: risotto
+    description: 'Blog về bảo mật - Cookie Han Hoan'
+    logo: images/rice.svg
+  socialLinks:
+    - icon: fa-brands fa-facebook
+      title: Facebook
+      url: 'https://www.facebook.com/cookie.han.hoan/'
+    - icon: fa-brands fa-github
+      title: GitHub
+      url: 'https://github.com/cookiehanhoan'
+    - icon: fa-solid fa-envelope
+      title: Email
+      url: 'mailto:hazy@cookiehanhoan.org'
+        #- icon: ai ai-orcid
+        #  title: ORCID
+        #  url: 'https://orcid.org/0000-0001-2345-6789'
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: about
+      name: About
+      url: /about/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
 markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+
