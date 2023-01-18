@@ -75,7 +75,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Xin chào \U0001F44B"
     Content: Học bảo mật cùng gà vui vẻ nhé
 
   socialIcons:
