@@ -15,7 +15,7 @@ params:
   theme:
     palette: base16-dark
   about:
-    title: risotto
+    title: CHHCyberBlog
     description: 'Blog về bảo mật - Cookie Han Hoan'
     logo: images/rice.svg
   socialLinks:
